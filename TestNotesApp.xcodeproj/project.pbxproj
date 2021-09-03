@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		F17A615B26BA9B5F00528496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A615A26BA9B5F00528496 /* AppDelegate.swift */; };
 		F17A615D26BA9B5F00528496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A615C26BA9B5F00528496 /* SceneDelegate.swift */; };
-		F17A615F26BA9B5F00528496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A615E26BA9B5F00528496 /* ViewController.swift */; };
 		F17A616226BA9B5F00528496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17A616026BA9B5F00528496 /* Main.storyboard */; };
 		F17A616526BA9B5F00528496 /* TestNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F17A616326BA9B5F00528496 /* TestNotesApp.xcdatamodeld */; };
 		F17A616726BA9B6100528496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17A616626BA9B6100528496 /* Assets.xcassets */; };
 		F17A616A26BA9B6100528496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17A616826BA9B6100528496 /* LaunchScreen.storyboard */; };
+		F17A617226BA9D2300528496 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A617126BA9D2300528496 /* NotesTableViewController.swift */; };
+		F17A617426BABD5600528496 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A617326BABD5600528496 /* NotesTableViewCell.swift */; };
+		F17A617626BACA0900528496 /* ShowNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A617526BACA0800528496 /* ShowNoteViewController.swift */; };
+		F17A617F26BBF12C00528496 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A617E26BBF12C00528496 /* CoreDataHelper.swift */; };
+		F17A618126BBFC8A00528496 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A618026BBFC8A00528496 /* DateExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F17A615726BA9B5F00528496 /* TestNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17A615A26BA9B5F00528496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F17A615C26BA9B5F00528496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F17A615E26BA9B5F00528496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F17A616126BA9B5F00528496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F17A616426BA9B5F00528496 /* TestNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestNotesApp.xcdatamodel; sourceTree = "<group>"; };
 		F17A616626BA9B6100528496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F17A616926BA9B6100528496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F17A616B26BA9B6100528496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17A617126BA9D2300528496 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		F17A617326BABD5600528496 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		F17A617526BACA0800528496 /* ShowNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNoteViewController.swift; sourceTree = "<group>"; };
+		F17A617E26BBF12C00528496 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		F17A618026BBFC8A00528496 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,42 @@
 			children = (
 				F17A615A26BA9B5F00528496 /* AppDelegate.swift */,
 				F17A615C26BA9B5F00528496 /* SceneDelegate.swift */,
-				F17A615E26BA9B5F00528496 /* ViewController.swift */,
-				F17A616026BA9B5F00528496 /* Main.storyboard */,
+				F17A617B26BAE28900528496 /* Model */,
+				F17A617726BADC5500528496 /* View */,
+				F17A617826BADC6600528496 /* Controller */,
 				F17A616626BA9B6100528496 /* Assets.xcassets */,
 				F17A616826BA9B6100528496 /* LaunchScreen.storyboard */,
 				F17A616B26BA9B6100528496 /* Info.plist */,
 				F17A616326BA9B5F00528496 /* TestNotesApp.xcdatamodeld */,
 			);
 			path = TestNotesApp;
+			sourceTree = "<group>";
+		};
+		F17A617726BADC5500528496 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F17A616026BA9B5F00528496 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F17A617826BADC6600528496 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F17A617126BA9D2300528496 /* NotesTableViewController.swift */,
+				F17A617526BACA0800528496 /* ShowNoteViewController.swift */,
+				F17A617326BABD5600528496 /* NotesTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F17A617B26BAE28900528496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F17A618026BBFC8A00528496 /* DateExt.swift */,
+				F17A617E26BBF12C00528496 /* CoreDataHelper.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17A615F26BA9B5F00528496 /* ViewController.swift in Sources */,
 				F17A615B26BA9B5F00528496 /* AppDelegate.swift in Sources */,
+				F17A617226BA9D2300528496 /* NotesTableViewController.swift in Sources */,
+				F17A617F26BBF12C00528496 /* CoreDataHelper.swift in Sources */,
+				F17A617426BABD5600528496 /* NotesTableViewCell.swift in Sources */,
 				F17A615D26BA9B5F00528496 /* SceneDelegate.swift in Sources */,
 				F17A616526BA9B5F00528496 /* TestNotesApp.xcdatamodeld in Sources */,
+				F17A617626BACA0900528496 /* ShowNoteViewController.swift in Sources */,
+				F17A618126BBFC8A00528496 /* DateExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +331,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMB664RQJ2;
 				INFOPLIST_FILE = TestNotesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +351,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMB664RQJ2;
 				INFOPLIST_FILE = TestNotesApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
